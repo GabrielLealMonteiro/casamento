@@ -4,15 +4,15 @@
 // ============================================================
 const CONFIG = {
   casal: {
-    noiva: "Ana",
+    noiva: "Bárbara",
     noivo: "Gabriel",
-    hashtag: "#AnaEGabriel2027",
-    frase: "Vamos nos casar! E queremos você com a gente nesse dia.",
+    hashtag: "#BarbaraEGabriel2027",
+    frase: "“Acima de tudo, porém, revistam-se do amor, que é o elo perfeito.” — Colossenses 3:14",
     fotoCapa: "img/capa.jpg",          // foto da página inicial
   },
 
   // Data e hora (horário de Brasília = -03:00)
-  dataCasamento: "2027-05-15T16:00:00-03:00",
+  dataCasamento: "2027-04-11T12:30:00-03:00",
 
   // ---------------- PÁGINA "NOSSA HISTÓRIA" ----------------
   historia: {
@@ -66,26 +66,19 @@ const CONFIG = {
   // ---------------- O GRANDE DIA ----------------
   eventos: [
     {
-      titulo: "Cerimônia",
-      hora: "16h00",
-      local: "Paróquia Exemplo",
-      endereco: "SHIS QL 10, Lago Sul - Brasília, DF",
-      mapa: "https://maps.google.com/?q=SHIS+QL+10+Lago+Sul+Brasilia",
-    },
-    {
-      titulo: "Recepção",
-      hora: "18h00",
-      local: "Espaço Exemplo",
-      endereco: "SCES Trecho 2, Brasília, DF",
-      mapa: "https://maps.google.com/?q=SCES+Trecho+2+Brasilia",
+      titulo: "Cerimônia e recepção",
+      hora: "12h30",
+      local: "Buffet Capricho",
+      endereco: "Av. Nova Cantareira, 4238 - Tucuruvi, São Paulo/SP",
+      mapa: "https://www.google.com/maps/search/?api=1&query=Buffet+Capricho+Av.+Nova+Cantareira+4238+Tucuruvi+Sao+Paulo",
     },
   ],
 
   infos: [
-    { icone: "👔", titulo: "Traje", texto: "Esporte fino. Evite branco, por favor." },
-    { icone: "🚗", titulo: "Estacionamento", texto: "Gratuito no local, com manobrista." },
-    { icone: "🏨", titulo: "Hospedagem", texto: "Sugestões de hotéis próximos para quem vem de fora." },
-    { icone: "📅", titulo: "Confirme até", texto: "15 de abril de 2027." },
+    { icone: "📅", titulo: "Data", texto: "Domingo, 11 de abril de 2027, às 12h30." },
+    { icone: "📍", titulo: "Local", texto: "Buffet Capricho - Tucuruvi, São Paulo/SP." },
+    { icone: "👔", titulo: "Traje", texto: "Em breve." },
+    { icone: "💌", titulo: "Confirme sua presença", texto: "Pelo formulário logo abaixo." },
   ],
 
   // ---------------- PIX (todos os presentes caem aqui) ----------------
