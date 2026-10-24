@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Presentes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="presentes">
+  <nav class="nav" id="nav"></nav>
+
+  <section class="section top">
+    <h2>Lista de presentes</h2>
+    <p class="lead" id="gift-intro"></p>
+    <div class="toolbar">
+      <div class="filters" id="filters"></div>
+      <select id="sort" aria-label="Ordenar">
+        <option value="padrao">Ordenar: sugestão dos noivos</option>
+        <option value="menor">Menor valor</option>
+        <option value="maior">Maior valor</option>
+      </select>
+    </div>
+    <div class="gifts" id="gifts"></div>
+    <p class="small pix-note">🔒 Pagamento via Pix direto para os noivos. Sem taxas, sem cadastro.</p>
+  </section>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="close" id="m-close" aria-label="Fechar">×</button>
+      <div class="m-media" id="m-media"></div>
+      <h3 id="m-title"></h3>
+      <p class="small" id="m-desc"></p>
+      <div class="qty" id="m-qty">
+        <button type="button" data-d="-1">−</button>
+        <span><b id="m-qty-n">1</b> cota(s)</span>
+        <button type="button" data-d="1">+</button>
+      </div>
+      <div class="free" id="m-free">
+        <span>R$</span><input id="m-free-input" type="number" min="1" step="1" value="100" />
+      </div>
+      <p class="m-value" id="m-value"></p>
+      <div id="qrcode" class="qrcode"></div>
+      <p class="small">Abra o app do seu banco → Pix → Ler QR Code<br/>ou use o Pix Copia e Cola:</p>
+      <div class="copy-row">
+        <input id="m-code" readonly />
+        <button class="btn-sm" id="m-copy">Copiar</button>
+      </div>
+      <form id="gift-form" class="form compact">
+        <input name="nome" placeholder="Seu nome" required />
+        <textarea name="mensagem" placeholder="Mensagem para os noivos (opcional)"></textarea>
+        <button class="btn" type="submit">Já fiz o Pix 💛</button>
+        <p class="form-msg" id="gift-msg"></p>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer" id="footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/pix.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

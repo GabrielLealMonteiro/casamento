@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosso Casamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="inicio">
+  <nav class="nav" id="nav"></nav>
+
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-sub">Vamos nos casar</p>
+      <h1 id="nomes"></h1>
+      <p class="hero-date" id="data-extenso"></p>
+      <div class="countdown" id="countdown"></div>
+      <a href="#rsvp" class="btn">Confirmar presença</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <p class="script">Bem-vindos</p>
+    <p class="lead" id="frase"></p>
+    <div class="shortcuts">
+      <a href="historia.html" class="shortcut"><span>📖</span>Nossa história</a>
+      <a href="fotos.html" class="shortcut"><span>📸</span>Pré-wedding</a>
+      <a href="presentes.html" class="shortcut"><span>🎁</span>Lista de presentes</a>
+    </div>
+  </section>
+
+  <section id="evento" class="section alt">
+    <h2>O grande dia</h2>
+    <div class="cards" id="eventos"></div>
+  </section>
+
+  <section id="infos" class="section">
+    <h2>Informações</h2>
+    <div class="info-grid" id="info-grid"></div>
+  </section>
+
+  <section id="rsvp" class="section alt">
+    <h2>Confirme sua presença</h2>
+    <form id="rsvp-form" class="form">
+      <input name="nome" placeholder="Nome completo" required />
+      <input name="telefone" placeholder="WhatsApp" />
+      <select name="presenca" required>
+        <option value="">Você vai?</option>
+        <option value="Sim">Sim, estarei lá! 🎉</option>
+        <option value="Não">Infelizmente não poderei ir</option>
+      </select>
+      <input name="acompanhantes" type="number" min="0" max="10" placeholder="Nº de acompanhantes" />
+      <input name="nomes_acompanhantes" placeholder="Nomes dos acompanhantes" />
+      <textarea name="restricoes" placeholder="Restrição alimentar? (opcional)"></textarea>
+      <textarea name="mensagem" placeholder="Deixe um recado para os noivos 💌"></textarea>
+      <button class="btn" type="submit">Enviar</button>
+      <p class="form-msg" id="rsvp-msg"></p>
+    </form>
+  </section>
+
+  <footer class="footer" id="footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/pix.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
